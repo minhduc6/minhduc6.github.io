@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+      <li>
+        <a href="index.html">Homepage</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+
+    <div style="text-align: center">
+      <h1>Học CSS Flexbox toàn tập phần 1</h1>
+      <p>POSTED ON13/10/2020 <img src="image/1.jpg" /> evondev</p>
+      <img src="image/18.jpg" />
+    </div>
+    <div style="margin-left: 250px; margin-right: 250px">
+      <h1>Nội dung bài viết</h1>
+      <ul style="list-style: none">
+        <li><a href="#a" style="color: aqua"># Thuộc tính Display: Flex</a></li>
+        <li><a href="#b" style="color: aqua"># Flex-direction</a></li>
+        <li>
+          <a href="#c" style="color: aqua"># Flex-wrap</a>
+        </li>
+        <li>
+          <a href="#d" style="color: aqua"># Tạm kết </a>
+        </li>
+        <p>
+            Trước đây khi chúng ta thiết kế web đặc biệt là dàn trang layout, menu, chia các cột cho các thành phần trong web thì hầu hết đều sử dụng các thuộc tính như <em style="color: red;">float</em> kèm theo đó là <em style="color: red;"> clear float</em> để chia cột . Khó khăn là khi responsive và hiển thị trên nhiều thiết bị phải chỉnh sửa code khá nhiều nên rất tốn thời gian.
+        </p>
+        <p>
+            Hoặc nhanh hơn thì các bạn sử dụng CSS Framework như bootstrap chẳng hạn, nhưng như thế thì website của bạn lại có nhiều đoạn code ‘dư thừa’ bạn không sử dụng gây ảnh hưởng đến tốc độ website…
+        </p>
+        <p>
+            Thế là Flexbox được sinh ra để cải thiện tình hình này, giúp cho việc dàn trang, canh các thành phần với nhau linh hoạt, dễ dàng và tiết kiệm thời gian hơn rất nhiều.
+        </p>
+        <p>
+            Hôm nay mình viết bài này để chúng ta cùng tìm hiểu về sức mạnh của CSS Flexbox để xem cách sử dụng nó như thế nào, nó có những thuộc tính hay gì mà nhiều người lại sử dụng nó thay cho float hay inline thế nhỉ ?
+        </p>
+        <h2 id="a"># Thuộc tính Display: Flex</h2>
+        <p>
+            Để sử dụng flex trong css thì đơn giản là chúng ta chỉ cần sử dụng thuộc tính display: flex. Mình có layout như thế này để các bạn dễ hình dung nha.
+
+        </p>
+        <img src="image/19.jpg.png" >
+        <p>
+            Và mình css như sau:
+            
+        </p>
+        <img src="image/20.jpg.png" >
+        <p>
+            Và đây là kết quả
+        </p>
+        <img src="image/21.jpg.png" >
+        <p>
+            Roài giờ đây mình sẽ đi vào chi tiết từng thuộc tính khác của CSS Flexbox kèm theo hình minh họa để cho các bạn dễ hình dung nha. Mình sẽ giải thích từng thuộc tính một cho các bạn kèm hình minh họa cho các bạn dễ hiểu. Nếu không hiểu thì bình luận ở dưới mình sẽ trả lời thắc mắc của các bạn. À 1 lưu ý nhỏ:
+        </p>
+        <h2 id="b"># Flex-direction</h2>
+        <p>
+            Như tên gọi của nó là hướng(trục), thì trong flexbox có 2 trục chính đó là trục X và trục Y giống như biểu đồ toán học đó các bạn. Lưu ý là flexbox chỉ hiển thị theo 1 trong 2 hướng thôi nha, chứ không hiển thị 1 lần 2 hướng như CSS Grid được(Sau này mình sẽ viết bài này sau).
+        </p>
+        <img src="image/22.jpg.png" >
+        <p>
+            
+Mặc định thì những items trong flexbox được sắp xếp theo trục X và từ trái qua phải. Đó là lý do vì sao khi mình dùng <em style="color: red;">display: flex</em> ở ví dụ ở trên đầu thì các items được sắp xếp thành hàng ngang và hiển thị từ trái qua phải.
+        </p>
+        <p>
+            Trong flex-direction có 4 giá trị bao gồm: row, row-reverse, column và column reverse.Các bạn nên mở Codepen mình chèn ở trên lên rồi chèn từng thuộc tính vào thử xem có giống hình mình minh họa không nhé.
+        </p>
+        <p>
+            flex-direction: row là giá trị mặc định trong flex-direction các items sẽ được sắp xếp theo chiều ngang(trục X) và hiển thị từ trái sang phải.
+        </p>
+         <img src="image/23.jpg.png" >
+         <p>
+             flex-direction: row-reverse cũng giống như thuộc tính flex-direction: row nhưng những items sẽ được hiển thị từ phải qua trái
+         </p>
+         <img src="image/23.jpg.png" >
+         <p>
+             flex-direction: column các items được sắp xếp chiều dọc(trục Y) và hiển thị từ trên xuống dưới
+         </p>
+        <img src="image/24.jpg" style="margin-left: 150px;" >
+        <p>flex-direction: column-reverse cũng giống với thuộc tính flex-direction: column là các items được sắp xếp chiều dọc(trục Y) nhưng khác ở chỗ là các items hiển thị từ dưới lên trên</p>
+        <img src="image/25.jpg" style="margin-left: 150px;" >
+        <h2 id="c"># Flex-wrap</h2>
+        <p>
+            Cho phép các items tự động xuống hàng hoặc vẫn luôn nằm trên cùng một hàng khi kích thước container thay đổi. Hơi khó hiểu nhỉ, xem demo dưới đây nha.
+        </p>
+        <p>
+            Flex-wrap có 3 giá trị đó là wrap, nowrap và wrap-reverse.
+
+Mặc định là nowrap nên các bạn không cần phải set. Khi chúng ta resize trình duyệt lại nếu các bạn sử dụng thuộc tính flex-wrap: nowrap thì các items sẽ tự động co lại cho chớ không có rớt xuống hàng, điều này dễ làm cho content bên trong(nếu có) bị ép lại có thể gây xấu giao diện.
+        </p>
+        <img src="image/21.jpg.png" >
+        <p>
+            flex-wrap: wrap ngược lại so với flex-wrap: nowrap khi kích thước container thay đổi và tổng chiều rộng các items cộng lại lớn hơn chiều rộng của container bọc ngoài thì nó sẽ rớt xuống.
+
+Ví dụ như ở demo Codepen. Có 3 items mỗi item 150px, độ rộng(width) của container là 100% là khung hiển thị ở codepen. Khi chúng ta resize trình duyệt thì khung container nó cũng nhỏ theo, khi chạm qua item số 3 màu xanh lá 1 chút thì item sẽ tự động rớt xuống.
+        </p>
+        <img src="image/21.jpg.png" >
+        <p>
+        
+            
+Cuối cùng là flex-wrap: wrap-reverse cũng tương tự như flex-wrap: wrap nhưng nó ngược lại thay vì item rớt xuống thì nó rớt lên. Resize trình duyệt phát hiểu ngay.
+        </p>
+         <img src="image/21.jpg.png" >
+         <P>
+             Lâu lâu các bạn có thấy một số người dùng thuộc tính flex-flow: row wrap. Thuộc tính này viết để gộp 2 thuộc tính flex-direction và flex-wrap lại nhé các bạn. Nó như thế này flex-flow: flex-direction flex-wrap. Ứng với flex-direction và flex-wrap các bạn thay giá trị tương ứng vào nhé.
+         </P>
+         <h2 id="d"># Tạm kết</h2>
+         <p>
+             Do bài này dài và mình cũng muốn giải thích chi tiết cho các bạn. Nên mình chia bài về flexbox này thành 5 phần(4 phần lý thuyết và 1 phần thực hành) cho các bạn dễ theo dõi và đỡ ngán khi đọc do dài quá.
+         </p>
+         <p>
+             Bài tiếp theo mình sẽ nói đến 4 thuộc tính khác đó là justify-content, align-items, align-self và order các bạn nhớ đón đọc nha. Nếu có ý kiến hay góp ý hoặc không hiểu thì bình luận bên dưới mình sẽ trả lời. Chúc các bạn một ngày tốt lành.
+         </p>
+</body>
+</html>
