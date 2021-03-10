@@ -1,0 +1,79 @@
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 0;
+  line-height: 2;
+  font-size: 20px;
+}
+ul li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 0;
+  line-height: 2;
+  font-size: 20px;
+}
+.red {
+  color: red;
+}
+.aqua {
+  color: aqua;
+}
+.warp {
+  width: 1000px;
+  margin: auto;
+}
+.banner {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.banner img {
+  width: 180px;
+}
+.menu {
+  width: 100%;
+  height: 60px;
+}
+.menu ul li {
+  list-style: none;
+  float: left;
+}
+.menu1 {
+  padding-left: 120px;
+  padding-top: 10px;
+  width: 33%;
+  height: 60px;
+  box-sizing: border-box;
+  background: gray;
+  float: left;
+}
+.menu2 {
+  padding-left: 180px;
+  padding-top: 10px;
+  height: 60px;
+  width: 33%;
+  box-sizing: border-box;
+  float: left;
+  background: gray;
+  border-left: 1px solid black;
+}
+.menu3 {
+  padding-left: 180px;
+  padding-top: 10px;
+  height: 60px;
+  width: 31%;
+  box-sizing: border-box;
+  float: left;
+  background: gray;
+  border-left: 1px solid black;
+}
+div.menu1 :hover {
+  background-color: darkred;
+  color: aliceblue;
+}
+div.menu2 :hover {
+  background-color: darkred;
+  color: aliceblue;
+}
+div.menu3 :hover {
+  background-color: darkred;
+  color: aliceblue;
+}
