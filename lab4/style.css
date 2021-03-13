@@ -1,0 +1,25 @@
+.menu {
+  word-spacing: -1ch;
+}
+.menu-iteam {
+  word-spacing: normal;
+  display: inline-block;
+}
+.menu-link {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  background: blue;
+  color: white;
+}
+.menu-link.active {
+  background: yellow;
+  color: black;
+}
+.sub-iteam {
+  list-style: none;
+}
+.sub-link {
+  text-decoration: none;
+  color: black;
+}
