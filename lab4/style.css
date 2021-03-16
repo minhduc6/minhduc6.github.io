@@ -2,8 +2,17 @@
   word-spacing: -1ch;
 }
 .menu-iteam {
+  position: relative;
   word-spacing: normal;
   display: inline-block;
+  vertical-align: top;
+}
+.menu-iteam:hover > .menu-link {
+  background: yellow;
+  color: black;
+}
+.menu-iteam:hover > .sub-menu {
+  display: block;
 }
 .menu-link {
   display: block;
@@ -12,14 +21,47 @@
   background: blue;
   color: white;
 }
-.menu-link.active {
-  background: yellow;
-  color: black;
-}
+
 .sub-iteam {
   list-style: none;
 }
 .sub-link {
   text-decoration: none;
   color: black;
+}
+.sub-menu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  padding-left: 0;
+  background: green;
+  display: none;
+}
+.sub-link {
+  color: white;
+  box-sizing: border-box;
+  display: block;
+  padding: 10px;
+}
+p:hover {
+  background: pink;
+}
+.sub-iteam:hover > .sub-link {
+  background: red;
+}
+
+.sub-iteam:hover .sub-menu {
+  display: block;
+}
+
+.sub-iteam .sub-menu {
+  top: 0;
+  left: 100%;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
