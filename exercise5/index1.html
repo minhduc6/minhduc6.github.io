@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="image/4.jpg" type="image/gif" sizes="16x16" />
+    <title>Facebook</title>
+  </head>
+  <body>
+    <div class="container1">
+      <header></header>
+      <section class="section">
+        <div class="profile">
+          <div class="anh">
+            <img src="image/2.img.png" alt="" />
+            <h3 style="word-spacing: 0ch">Đăng nhập gần đây</h3>
+            <p style="word-spacing: 0ch">
+              Nhấp vào ảnh của bạn hoặc thêm tài khoản
+            </p>
+            <div class="nick">
+              <img
+                src="image/3.jpg"
+                alt=""
+                style="
+                  width: 100%;
+                  height: 120px;
+                  border-image: 10px;
+                  margin-top: 3px;
+                "
+              />
+              <p style="text-align: center; margin-top: 5px">Đức</p>
+            </div>
+          </div>
+        </div>
+        <div class="dangnhap">
+          <div class="box">
+            <input
+              class="active"
+              type="text"
+              name="TK"
+              placeholder="Email hoặc Số Điện Thoại"
+            />
+            <input
+              class="active"
+              type="password"
+              name="pass"
+              placeholder="Mật Khẩu"
+            />
+            <button
+              class="active"
+              type="button"
+              class="btn btn-primary"
+              style="background: #3d3dff"
+            >
+              Đăng Nhập
+            </button>
+            <p
+              style="
+                color: #3d3dff;
+                text-align: center;
+                word-spacing: 0ch;
+                border-bottom: 1px solid;
+              "
+            >
+              Quên mật khẩu ?
+            </p>
+            <a class="link" href="">
+              <label for="popup" class="box-1">Tạo Tài Khoản Mới</label>
+            </a>
+
+            <input class="input1" id="popup" type="checkbox" />
+
+            <div class="popup-wrapper">
+              <div class="dangky">
+                <label for="popup" style="float: right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-x-circle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                    />
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </label>
+                <h2 style="word-spacing: 0ch">Đăng Ký</h2>
+                <p style="word-spacing: 0ch; border-bottom: 1px solid gray">
+                  Nhanh Chóng và Dễ Dàng
+                </p>
+                <br />
+                <input
+                  type="text"
+                  name="họ"
+                  placeholder="Họ"
+                  style="margin-left: 30px; width: 200px"
+                />
+                <input
+                  type="text"
+                  name="tên"
+                  placeholder="Name"
+                  style="margin-left: 10px; width: 200px"
+                />
+                <input
+                  type="text"
+                  name="SDT"
+                  placeholder="Số Điện Thoại hoặc Email"
+                  style="margin-left: 30px; width: 410px; margin-top: 10px"
+                />
+                <input
+                  type="text"
+                  name="pass"
+                  placeholder="Mật Khẩu Mới"
+                  style="margin-left: 30px; width: 410px; margin-top: 10px"
+                />
+                <label
+                  for="date"
+                  style="word-spacing: 0ch; margin-left: 30px; margin-top: 10px"
+                  >Ngày/Tháng/Năm Sinh</label
+                >
+                <input
+                  type="date"
+                  name="Ngaysinh"
+                  id="date"
+                  style="margin-left: 30px; width: 410px; margin-top: 10px"
+                />
+                <label
+                  for="date"
+                  style="word-spacing: 0ch; margin-left: 30px; margin-top: 10px"
+                  >Giới Tính</label
+                >
+                <br />
+                <label
+                  for="date"
+                  style="
+                    word-spacing: 0ch;
+                    margin-left: 30px;
+                    margin-top: -15px;
+                    margin-right: 5px;
+                  "
+                  >Nam</label
+                >
+                <input type="radio" name="gender" />
+                <label
+                  for="date"
+                  style="
+                    word-spacing: 0ch;
+                    margin-left: 30px;
+                    margin-top: -15px;
+                    margin-right: 5px;
+                  "
+                  >Nữ</label
+                >
+                <input type="radio" name="gender" />
+                <label
+                  for="date"
+                  style="
+                    word-spacing: 0ch;
+                    margin-left: 30px;
+                    margin-top: -15px;
+                    margin-right: 5px;
+                  "
+                  >Lesiban</label
+                >
+                <input type="radio" name="gender" />
+                <p
+                  style="word-spacing: 0ch; margin-left: 30px; font-size: 15px"
+                >
+                  Bằng cách nhấp vào <span><a href="">Đăng Ký</a></span
+                  >, bạn đồng ý với <span><a href="">Điều Khoản</a></span
+                  >, Chính sách dữ liệu và Chính sách cookie của chúng tôi. Bạn
+                  có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận
+                  bất kỳ lúc nào.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  style="width: 200px; margin-left: 140px"
+                >
+                  Đăng Ký
+                </button>
+              </div>
+            </div>
+          </div>
+          <p style="word-spacing: 0ch; margin-left: 120px; margin-top: 10px">
+            <a href="">Tạo Trang </a>dành cho người nổi tiếng, nhãn hiệu hoặc
+            doanh nghiệp
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="language">
+      <div class="container1 container2">
+        <ul>
+          <li><a href="">Tiếng Việt </a></li>
+          <li><a href="">English (UK) </a></li>
+          <li><a href="">中文(台灣) </a></li>
+          <li><a href="">日本語 </a></li>
+          <li><a href="">한국어 </a></li>
+          <li><a href="">ภาษาไทย </a></li>
+          <li><a href="">Français (France) </a></li>
+          <li><a href="">Español </a></li>
+          <li><a href="">Português (Brasil) </a></li>
+          <li><a href="">Deutsch </a></li>
+          <li><a href="">Italiano </a></li>
+          <li><a href="">Khác </a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
