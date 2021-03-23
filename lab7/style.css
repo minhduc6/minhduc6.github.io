@@ -92,7 +92,7 @@ img {
 .nav {
   width: 100%;
   height: 50px;
-  background: hotpink;
+  background: #fff;
   display: flex;
 }
 .nav img {
@@ -193,7 +193,7 @@ img {
 .section2 {
   width: 100%;
   height: 650px;
-  background: violet;
+  background: #fff;
 }
 .box {
   width: 940px;
@@ -205,7 +205,7 @@ img {
 .box-1 {
   width: 49%;
   height: 550px;
-  background: red;
+  background: #fff;
 }
 .box-1-anh {
   width: 100%;
@@ -220,7 +220,7 @@ img {
   text-align: center;
   width: 100%;
   height: 100px;
-  background: yellow;
+  background: #fff;
 }
 .box-1-nd a {
   margin-bottom: 5px;
@@ -230,13 +230,13 @@ img {
   margin-left: 20px;
   width: 49%;
   height: 550px;
-  background: gray;
+  background: #fff;
 }
 .text1 {
   text-align: center;
   width: 100%;
   height: 50px;
-  background: red;
+  background: #fff;
 }
 .text1 {
   position: static;
@@ -252,14 +252,14 @@ img {
   margin-top: 50px;
   width: 100%;
   height: auto;
-  background: cornflowerblue;
+  background: #fff;
 }
 .section3-box {
   margin-left: auto;
   margin-right: auto;
   width: 940px;
   height: auto;
-  background: gray;
+  background: #fff;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -345,7 +345,7 @@ img {
   margin-top: 50px;
   width: 100%;
   height: 50px;
-  background: gray;
+  background: #fff;
 }
 .section4 {
   margin-top: 50px;
